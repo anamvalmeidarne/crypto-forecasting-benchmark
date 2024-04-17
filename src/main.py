@@ -10,7 +10,7 @@ if __name__ == "__main__":
     for coin in config.all_coins:
         if os.path.exists(f"{config.coin_dir}/{coin}"):
             # Test if the .csv files exist in the folder
-            for time_frame in config.time_frames:
+            for time_frame in config.timeframes:
                 if not os.path.exists(
                     f"{config.coin_dir}/{coin}/{coin}USDT_{time_frame}.csv"
                 ):
